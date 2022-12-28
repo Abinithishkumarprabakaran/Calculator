@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        button{
+            margin: 5px;
+        }
+        .c{
+            margin: 0px;
+            background-color: #ff9500; /* Green */
+            border: none;
+            color: rgb(0, 0, 0);
+            /* padding: 15px 15px; */
+            /* text-align: center; */
+            /* text-decoration: none; */
+            /* display: inline-block; */
+            font-size: 16px;
+            width: 150px;
+            height: 25px;
+        }
+        #calc{
+            width: 150px;
+            position: relative;
+            left: 50px;
+            border: 2px solid grey;
+        }
+        .data{
+            width:auto;
+            height: 35px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="calc">
+        <div>
+            <p class="data one-field"></p>
+            <!-- <p class="data two-field"></p> -->
+        </div>
+
+        <button onclick="clearfunc(this)" class="c">C</button><br>
+
+        <button onclick="calcfunc(this)" class="7">7</button>
+        <button onclick="calcfunc(this)" class="8">8</button>
+        <button onclick="calcfunc(this)" class="9">9</button>
+        <button onclick="calcfunc(this)" for="*" class="multiply expression">*</button><br>
+
+        <button onclick="calcfunc(this)" class="4">4</button>
+        <button onclick="calcfunc(this)" class="5">5</button>
+        <button onclick="calcfunc(this)" class="6">6</button>
+        <button onclick="calcfunc(this)" for="-" class="subtract expression">-</button><br>
+
+        <button onclick="calcfunc(this)" class="1">1</button>
+        <button onclick="calcfunc(this)" class="2">2</button>
+        <button onclick="calcfunc(this)" class="3">3</button>
+        <button onclick="calcfunc(this)" for="+" class="plus expression">+</button><br>
+        
+        <button onclick="calcfunc(this)" class="0">0</button>
+        <button onclick="calcfunc(this)" for="." class="dot expression">.</button>
+        <button onclick="calcfunc(this)" for="/" class="divide expression">/</button>
+        <button onclick="calcfunc(this)" for="=" class="equal expression">=</button>
+
+
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
